@@ -6,7 +6,7 @@ DataFaultBench is the reproducible research artifact accompanying *DataFaultBenc
 
 ## What is included
 
-- Frozen Study I materials for 55 provenance-reviewed OpenML classification domains.
+- Frozen Study I manifest and verification metadata for 55 provenance-reviewed OpenML classification domains.
 - Machine-readable calibration and sealed-confirmation receipts.
 - A 36-candidate, two-fault interaction search with multiplicity control.
 - Post hoc source-domain cross-fitting outputs and scripts.
@@ -32,7 +32,7 @@ These results distinguish **selection stability** from **effect transport**. Cro
 | `configs/` | Frozen simulation and cross-fitting configurations |
 | `protocols/` | Prespecified and post-Study-I analysis plans |
 | `results/` | Machine-readable outputs, figures, ledgers, and receipts |
-| `study_i_reference/` | Byte-frozen Study I reproducibility package and 55-domain manifest |
+| `study_i_reference/` | Study I verification metadata and 55-domain manifest |
 | `analysis/` | Reproducible exploratory notebook |
 | `scripts/` | Execution and verification entry points |
 | `tests/` | Automated unit tests |
@@ -65,7 +65,7 @@ python scripts/run_simulation.py \
   --output results/simulation_v1_rerun
 ```
 
-The original Study I package in `study_i_reference/` contains its own acquisition, execution, and verification instructions. See [Reproducibility](docs/REPRODUCIBILITY.md) for the full sequence.
+The complete byte-frozen Study I archive is retained as the journal's Online Resource 1; this public software release exposes the reusable code, frozen manifest, machine-readable summaries, and integrity guidance without placing the large execution ledger in Git history. See [Reproducibility](docs/REPRODUCIBILITY.md) for the full sequence.
 
 ## Evidential status
 
