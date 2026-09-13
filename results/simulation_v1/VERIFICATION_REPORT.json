@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "all_summaries_have_expected_repetitions": true,
+    "failure_ledger_empty": true,
+    "plan_id_matches": true,
+    "replicate_count_is_180000": true,
+    "scenario_count_is_90": true,
+    "scenario_keys_unique": true
+  },
+  "files": {
+    "RUN_RECEIPT.json": "5fd16eab82a485cd44ec1776ab4e4798eedbeb47a7968d9e5f780616c9958918",
+    "fig1_false_positive_control.pdf": "2a908b3bff61c40a35c9b900e078fbdf35db96df4b691891f9daf1f575b9a536",
+    "fig1_false_positive_control.png": "428e2d8fdc4057111d6cdc944d05645ce7cf0220bf7a08afc1e0f6184aebfb9f",
+    "fig2_search_width_optimism.pdf": "15b706b19bb34a06dfebd87c14853ab6a00ddccdccec1b8603dee2c93133a232",
+    "fig2_search_width_optimism.png": "8388bb46b311d821defd320550c04626db0b7a3dea70aedf46d513474b50d1f8",
+    "fig3_calibration_confirmation_gap.pdf": "9984d6f0266b93070e7671a6d53ccf9122e2d201441d83305f11db3cc4db91bd",
+    "fig3_calibration_confirmation_gap.png": "300a5c5e5cf3c5f517218acb7955bac630966bcfb8ef771c49ad604313361c20",
+    "fig4_interval_coverage.pdf": "e3b5027371a4291422155a7562c38ae5a5e6ce15f247e6b9690ffdf0eb762abc",
+    "fig4_interval_coverage.png": "7256c3b679ec65f342cc8845707f6da3fcd7e9818d6d53325cfae502f66e68b7",
+    "simulation_failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "simulation_replicates.csv.gz": "a924037c8d6e660c381f001e3f35831b4c4526299d6b29e6cbef85d247d6273a",
+    "simulation_summary.csv": "efc15da48254aef02e50e66fbef73b72ac8dd675ffc8e076f53dddd2a8fc8484"
+  },
+  "status": "VERIFIED"
+}
