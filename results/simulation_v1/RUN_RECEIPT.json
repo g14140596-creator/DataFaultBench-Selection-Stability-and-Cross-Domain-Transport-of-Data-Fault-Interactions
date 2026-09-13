@@ -1,0 +1,75 @@
+{
+  "files": [
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/configs/simulation_study_v1.json",
+      "sha256": "70c1a1440d26b3c49c6b68816a317a71ef2c00fdce30da918079eeadb24ac875",
+      "size_bytes": 1012
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/fig1_false_positive_control.pdf",
+      "sha256": "2a908b3bff61c40a35c9b900e078fbdf35db96df4b691891f9daf1f575b9a536",
+      "size_bytes": 15414
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/fig1_false_positive_control.png",
+      "sha256": "428e2d8fdc4057111d6cdc944d05645ce7cf0220bf7a08afc1e0f6184aebfb9f",
+      "size_bytes": 110572
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/fig2_search_width_optimism.pdf",
+      "sha256": "15b706b19bb34a06dfebd87c14853ab6a00ddccdccec1b8603dee2c93133a232",
+      "size_bytes": 14573
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/fig2_search_width_optimism.png",
+      "sha256": "8388bb46b311d821defd320550c04626db0b7a3dea70aedf46d513474b50d1f8",
+      "size_bytes": 117724
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/fig3_calibration_confirmation_gap.pdf",
+      "sha256": "9984d6f0266b93070e7671a6d53ccf9122e2d201441d83305f11db3cc4db91bd",
+      "size_bytes": 15148
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/fig3_calibration_confirmation_gap.png",
+      "sha256": "300a5c5e5cf3c5f517218acb7955bac630966bcfb8ef771c49ad604313361c20",
+      "size_bytes": 124706
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/fig4_interval_coverage.pdf",
+      "sha256": "e3b5027371a4291422155a7562c38ae5a5e6ce15f247e6b9690ffdf0eb762abc",
+      "size_bytes": 16263
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/fig4_interval_coverage.png",
+      "sha256": "7256c3b679ec65f342cc8845707f6da3fcd7e9818d6d53325cfae502f66e68b7",
+      "size_bytes": 120056
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/simulation_failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/simulation_replicates.csv.gz",
+      "sha256": "a924037c8d6e660c381f001e3f35831b4c4526299d6b29e6cbef85d247d6273a",
+      "size_bytes": 8040886
+    },
+    {
+      "path": "/workspace/scratch/a297d3b13ebb/DataFaultBench_\u4e8c\u533a\u5347\u7ea7\u5de5\u7a0b/results/simulation_v1/simulation_summary.csv",
+      "sha256": "efc15da48254aef02e50e66fbef73b72ac8dd675ffc8e076f53dddd2a8fc8484",
+      "size_bytes": 37799
+    }
+  ],
+  "metadata": {
+    "completed_scenarios": 90,
+    "completed_utc": "2026-09-12T00:16:46.063885+00:00",
+    "config_sha256": "70c1a1440d26b3c49c6b68816a317a71ef2c00fdce30da918079eeadb24ac875",
+    "failed_scenarios": 0,
+    "master_seed": 20260912,
+    "note": "Figures regenerated from immutable simulation summary after visual layout correction.",
+    "plan_id": "DataFaultBench-SIM-v1",
+    "replications_per_scenario": 2000,
+    "scenario_count": 90
+  }
+}
