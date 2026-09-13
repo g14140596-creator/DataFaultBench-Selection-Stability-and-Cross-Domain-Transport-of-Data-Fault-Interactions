@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "plan_id": "DataFaultBench-SIM-v1",
+  "status": "FROZEN_BEFORE_SIMULATION_OUTPUT",
+  "master_seed": 20260912,
+  "replications": 2000,
+  "alpha": 0.05,
+  "main_factorial": {
+    "search_widths": [6, 12, 36, 72],
+    "calibration_domains": [26],
+    "confirmation_domains": [16],
+    "between_domain_sd": [0.005, 0.015, 0.03],
+    "candidate_correlation": [0.0, 0.5],
+    "regimes": [
+      {"name": "global_null", "signal": 0.0, "transfer": 1.0},
+      {"name": "stable_sparse_signal", "signal": 0.005, "transfer": 1.0},
+      {"name": "attenuated_sparse_signal", "signal": 0.005, "transfer": 0.5}
+    ]
+  },
+  "sample_size_sensitivity": {
+    "search_widths": [36],
+    "calibration_domains": [12, 26, 52],
+    "confirmation_domains": [12, 16, 32],
+    "between_domain_sd": [0.015],
+    "candidate_correlation": [0.5],
+    "regimes": [
+      {"name": "global_null", "signal": 0.0, "transfer": 1.0},
+      {"name": "stable_sparse_signal", "signal": 0.005, "transfer": 1.0}
+    ]
+  }
+}
+
