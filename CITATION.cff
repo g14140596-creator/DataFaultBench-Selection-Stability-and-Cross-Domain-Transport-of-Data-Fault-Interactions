@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use DataFaultBench, please cite this software and the accompanying article."
+title: "DataFaultBench: Source-Isolated Validation for Tabular Data-Quality Benchmarks"
+type: software
+version: 0.2.0
+date-released: 2026-09-13
+authors:
+  - family-names: Huang
+    given-names: Yueying
+    affiliation: "China University of Geosciences (Beijing)"
+repository-code: "https://github.com/g14140596-creator/DataFaultBench-Selection-Stability-and-Cross-Domain-Transport-of-Data-Fault-Interactions"
+url: "https://github.com/g14140596-creator/DataFaultBench-Selection-Stability-and-Cross-Domain-Transport-of-Data-Fault-Interactions"
+license: MIT
+keywords:
+  - benchmark validity
+  - data quality
+  - tabular machine learning
+  - adaptive selection
+  - cross-domain transport
+  - OpenML
+preferred-citation:
+  type: article
+  title: "DataFaultBench: Selection Stability and Cross-Domain Transport of Data-Fault Interactions"
+  authors:
+    - family-names: Huang
+      given-names: Yueying
+  year: 2026
