@@ -1,4 +1,4 @@
-name: publish-v0.2.0
+name: publish-v0.2.1
 
 on:
   push:
@@ -28,22 +28,22 @@ jobs:
       - name: Create versioned archive
         run: |
           release_stage="$(mktemp -d)"
-          mkdir "$release_stage/DataFaultBench-v0.2.0"
-          rsync -a --exclude=.git ./ "$release_stage/DataFaultBench-v0.2.0/"
-          (cd "$release_stage" && zip -q -r DataFaultBench-v0.2.0.zip DataFaultBench-v0.2.0)
-          mv "$release_stage/DataFaultBench-v0.2.0.zip" .
-          sha256sum DataFaultBench-v0.2.0.zip > DataFaultBench-v0.2.0.zip.sha256
+          mkdir "$release_stage/DataFaultBench-v0.2.1"
+          rsync -a --exclude=.git ./ "$release_stage/DataFaultBench-v0.2.1/"
+          (cd "$release_stage" && zip -q -r DataFaultBench-v0.2.1.zip DataFaultBench-v0.2.1)
+          mv "$release_stage/DataFaultBench-v0.2.1.zip" .
+          sha256sum DataFaultBench-v0.2.1.zip > DataFaultBench-v0.2.1.zip.sha256
       - name: Publish release once
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if gh release view v0.2.0 >/dev/null 2>&1; then
-            echo "Release v0.2.0 already exists; leaving it unchanged."
+          if gh release view v0.2.1 >/dev/null 2>&1; then
+            echo "Release v0.2.1 already exists; leaving it unchanged."
             exit 0
           fi
-          gh release create v0.2.0 \
+          gh release create v0.2.1 \
             --target "$GITHUB_SHA" \
-            --title "DataFaultBench v0.2.0" \
-            --notes-file release_notes_v0.2.0.md \
-            DataFaultBench-v0.2.0.zip \
-            DataFaultBench-v0.2.0.zip.sha256
+            --title "DataFaultBench v0.2.1" \
+            --notes-file release_notes_v0.2.1.md \
+            DataFaultBench-v0.2.1.zip \
+            DataFaultBench-v0.2.1.zip.sha256

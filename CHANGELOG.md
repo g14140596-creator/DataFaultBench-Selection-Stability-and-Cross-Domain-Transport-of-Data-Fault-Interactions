@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 - 2026-09-13
+
+- DOI-archival release for the Zenodo–GitHub integration.
+- Preserves the verified scientific results, frozen configurations, and public artifact scope of v0.2.0.
+- Updates release metadata without adding or changing Study I or Study II outcomes.
+
 ## 0.2.0 - 2026-09-13
 
 - First public research-artifact release.
