@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "plan_id": "DataFaultBench-CROSSFIT-v1",
+  "status": "POST_HOC_SPECIFICATION_FINALIZED_BEFORE_SCRIPT_EXECUTION",
+  "study_i_calibration_cells_sha256": "45c5eaaee8dd63f0108f89d704b28061f15a4430ba9b75ad27fc41053c29e099",
+  "minimum_training_domains": 12,
+  "candidate_score": "absolute equal-domain mean divided by domain-level standard error",
+  "tie_break": ["model", "defect_pair", "process", "severity"],
+  "direction_rule": "sign of the training-domain mean, positive when exactly zero",
+  "primary_crossfit": "leave_one_source_domain_out",
+  "secondary_crossfit": {
+    "method": "deterministic_13_fold_two_domain_holdout",
+    "ordering_salt": "DataFaultBench-CROSSFIT-v1-domain-order"
+  },
+  "repeated_split_sensitivity": {
+    "repetitions": 500,
+    "training_domains": 18,
+    "holdout_domains": 8,
+    "seed": 20260912,
+    "minimum_eligible_holdout_domains": 4
+  },
+  "inference_label": "post_hoc_internal_source_cross_fitting_not_external_replication",
+  "prohibited_claims": [
+    "preregistered cross-fitting",
+    "new external domains",
+    "independent prospective replication",
+    "replacement of the sealed Study I final test"
+  ]
+}
