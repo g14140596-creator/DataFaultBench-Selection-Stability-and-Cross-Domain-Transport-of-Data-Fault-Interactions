@@ -1,0 +1,49 @@
+name: publish-v0.2.0
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Reproduce and verify the simulation artifact
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .
+          PYTHONPATH=src python -m unittest discover -s tests -v
+          python scripts/run_simulation.py
+          python scripts/verify_release.py
+          python scripts/verify_zero_new_data_release.py
+      - name: Create versioned archive
+        run: |
+          release_stage="$(mktemp -d)"
+          mkdir "$release_stage/DataFaultBench-v0.2.0"
+          rsync -a --exclude=.git ./ "$release_stage/DataFaultBench-v0.2.0/"
+          (cd "$release_stage" && zip -q -r DataFaultBench-v0.2.0.zip DataFaultBench-v0.2.0)
+          mv "$release_stage/DataFaultBench-v0.2.0.zip" .
+          sha256sum DataFaultBench-v0.2.0.zip > DataFaultBench-v0.2.0.zip.sha256
+      - name: Publish release once
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v0.2.0 >/dev/null 2>&1; then
+            echo "Release v0.2.0 already exists; leaving it unchanged."
+            exit 0
+          fi
+          gh release create v0.2.0 \
+            --target "$GITHUB_SHA" \
+            --title "DataFaultBench v0.2.0" \
+            --notes-file release_notes_v0.2.0.md \
+            DataFaultBench-v0.2.0.zip \
+            DataFaultBench-v0.2.0.zip.sha256
