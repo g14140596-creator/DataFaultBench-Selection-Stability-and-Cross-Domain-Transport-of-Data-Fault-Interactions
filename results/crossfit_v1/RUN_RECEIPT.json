@@ -1,0 +1,9 @@
+{
+  "candidate_count": 36,
+  "completed_repeated_splits": 495,
+  "config_sha256": "604155e92cf96ae23c97093890ae72b363279ae0cb96d4d6efcda41411405a1e",
+  "domain_count": 26,
+  "input_cells_sha256": "45c5eaaee8dd63f0108f89d704b28061f15a4430ba9b75ad27fc41053c29e099",
+  "output_summary_sha256": "6f1519525bf45823f5a77ce328ac3fcf131f1a174599ca5b42991ce7275809cb",
+  "status": "POST_HOC_CROSSFIT_COMPLETE"
+}
