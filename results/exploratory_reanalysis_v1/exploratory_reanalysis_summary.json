@@ -1,0 +1,74 @@
+{
+  "component_transfer": {
+    "calibration": {
+      "interaction": 0.01599931671651456,
+      "joint_loss": 0.041005014181423535,
+      "label_flip_loss": 0.04429426066205179,
+      "outlier_loss": 0.012710070235886304
+    },
+    "calibration_n_domains": 20,
+    "final": {
+      "interaction": 0.00439476210554404,
+      "joint_loss": 0.0527220169306853,
+      "label_flip_loss": 0.043664025067679635,
+      "outlier_loss": 0.013452753968549717
+    },
+    "final_minus_calibration": {
+      "interaction": -0.01160455461097052,
+      "joint_loss": 0.011717002749261768,
+      "label_flip_loss": -0.0006302355943721555,
+      "outlier_loss": 0.0007426837326634135
+    },
+    "final_n_domains": 16,
+    "joint_loss_difference": 0.011717002749261768,
+    "marginal_sum_difference": 0.00011244813829125802
+  },
+  "curation_audit": {
+    "decision_counts": {
+      "blocked": 54,
+      "eligible": 55,
+      "excluded": 71
+    },
+    "nonretained_count": 125,
+    "nonretained_with_documented_note": 125,
+    "nonretained_with_evidence_url": 101,
+    "summary_category_counts": {
+      "Duplicate/source overlap": 9,
+      "Image/text-derived": 11,
+      "Non-IID/grouped units": 15,
+      "Other unresolved": 6,
+      "Provenance/license": 47,
+      "Synthetic/dependence": 2,
+      "Target/identifier leakage": 19,
+      "Temporal dependence": 16
+    },
+    "unique_reviewed_candidates": 180
+  },
+  "eligibility_common_support": {
+    "common_domains_all_36_candidates": 11,
+    "eligible_domains_by_pair": {
+      "categorical_inconsistency+missing": 17,
+      "missing+label_flip": 26,
+      "numeric_outlier+label_flip": 20
+    },
+    "formal_minimum_domains": 12,
+    "original_winner_common_support_rank": 1,
+    "original_winner_common_support_score": 3.288468151197544,
+    "original_winner_full_score": 3.585324035240394
+  },
+  "new_model_fits": 0,
+  "secondary_patterns": {
+    "high_minus_low_severity_mean_by_pair": {
+      "categorical_inconsistency+missing": -0.0010000284031213744,
+      "missing+label_flip": 0.0009463589653365958,
+      "numeric_outlier+label_flip": 0.006459646091989679
+    },
+    "median_matched_condition_cross_model_spearman": -0.00969624127555003,
+    "shared_latent_minus_independent_descriptive_ci": [
+      -0.003513819135993973,
+      0.0022961513009571335
+    ],
+    "shared_latent_minus_independent_mean": -0.0006088339175184198
+  },
+  "status": "POST_HOC_DESCRIPTIVE_REANALYSIS_NOT_CONFIRMATORY"
+}
