@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datafaultbench"
+version = "0.2.0"
+description = "Source-isolated validation for tabular data-quality benchmarks"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.1",
+  "pandas>=2.2",
+  "scipy>=1.14",
+  "matplotlib>=3.9",
+  "python-docx>=1.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/g14140596-creator/DataFaultBench-Selection-Stability-and-Cross-Domain-Transport-of-Data-Fault-Interactions"
+Repository = "https://github.com/g14140596-creator/DataFaultBench-Selection-Stability-and-Cross-Domain-Transport-of-Data-Fault-Interactions"
+Issues = "https://github.com/g14140596-creator/DataFaultBench-Selection-Stability-and-Cross-Domain-Transport-of-Data-Fault-Interactions/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
