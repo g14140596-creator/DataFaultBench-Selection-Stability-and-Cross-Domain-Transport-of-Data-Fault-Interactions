@@ -1,0 +1,11 @@
+Study,Primary scope,Source-domain separation,Joint-fault treatment,One-shot confirmation,Public artifacts,Qualification
+CleanML (2021),Cleaning impact,Not a stated design goal,Separate error types,Not reported,Open-source study,Summarizes the stated primary design
+JENGA (2021),Data-error robustness,Not a stated design goal,Common error scenarios,Not reported,Open-source framework,Scenario library rather than a transport estimand
+AQuA (2023),Label-quality methods,Not a stated design goal,Label-noise focus,Not reported,Benchmark code,Included for label-quality coverage
+REIN (2023),Detection and repair,Not a stated design goal,Realistic and synthetic error profiles,Not reported,Benchmark code/data,Focuses on cleaning systems
+TableShift (2023),Distribution shift,Curated task-specific shift splits,Not a primary estimand,Not reported,Data/API/code,"Shift benchmark, not a fault-interaction study"
+Shades of Null (2025),Missingness mechanisms,Not a stated design goal,Multiple missingness settings,Not reported,Pipeline suite,Not a matched cross-layer interaction estimand
+TabFSBench (2025),Feature shift,Open-environment task design,Feature-shift scenarios,Not reported,Public benchmark code,Emphasizes feature shift
+TabArena (2025),Living model benchmark,Curated tasks,Not a primary estimand,Validation safeguards,Leaderboard/code,Model benchmark rather than fault transport
+SAVAGE (2025),Structured corruption,Not a stated design goal,Dependent adversarial corruptions,Not reported,Stress-test framework,Adversarial robustness objective
+DataFaultBench,Selection and transport,55 reviewed source domains,Matched two-fault interaction Δ,Frozen source-disjoint final test,"Code, locks, ledgers, hashes",Current study
