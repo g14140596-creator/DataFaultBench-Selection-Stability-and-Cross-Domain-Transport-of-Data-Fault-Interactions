@@ -73,7 +73,13 @@ Study I is the completed source-isolated experiment. Cross-fitting and component
 
 ## Citation
 
-Please cite the archived release using [`CITATION.cff`](CITATION.cff). A version-specific DOI can be added after the GitHub repository is connected to Zenodo and the release is archived.
+Please cite the archived release using [`CITATION.cff`](CITATION.cff). The all-versions Zenodo DOI is [10.5281/zenodo.22734719](https://doi.org/10.5281/zenodo.22734719); it always resolves to the latest archived release. For exact reproducibility, cite the version-specific DOI shown on that release's Zenodo record.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22734719.svg)](https://doi.org/10.5281/zenodo.22734719)
+
+## Manuscript-aligned publication figures
+
+The `publication_figures_v2/` directory contains the final manuscript-aligned vector figures and machine-readable figure-source tables. These files only improve presentation and traceability: they do not add domains, alter observations, rerun the frozen study, or change any reported scientific result.
 
 ## License and upstream data
 
